@@ -1,0 +1,21 @@
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Кэш моделей Hugging Face (веса скачиваются при первом запуске)
+.cache/
+*.safetensors
+
+# Скачанное сырьё вики (генерируется scrape_wiki.py)
+source_scraped/
+
+# ОС
+.DS_Store
