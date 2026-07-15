@@ -1,0 +1,17 @@
+# RAG-бот QuantumForge — зависимости проекта
+# Python 3.11+ (протестировано на 3.14). Установка: pip install -r requirements.txt
+
+# --- Задание 2: подготовка базы знаний ---
+requests==2.34.2                 # скачиватель вики (scrape_wiki.py)
+
+# --- Задание 3: векторный индекс ---
+sentence-transformers==5.6.0     # локальные эмбеддинги (BGE)
+chromadb==1.5.9                  # векторная БД (основная, по Заданию 1)
+langchain-text-splitters==1.1.2  # RecursiveCharacterTextSplitter
+faiss-cpu==1.14.3                # альтернативный ANN-движок (прототип/резерв)
+numpy==2.5.1
+
+# torch и transformers ставятся автоматически как зависимости
+# sentence-transformers, версии зафиксированы для воспроизводимости:
+torch==2.13.0
+transformers==5.14.0

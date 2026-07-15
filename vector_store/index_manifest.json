@@ -1,0 +1,14 @@
+{
+  "embedding_model": "BAAI/bge-small-en-v1.5",
+  "embedding_dim": 384,
+  "vector_db": "ChromaDB (PersistentClient)",
+  "collection": "quantumforge_kb",
+  "distance": "cosine",
+  "documents": 44,
+  "chunks": 119,
+  "chunk_size_chars": 600,
+  "chunk_overlap_chars": 100,
+  "embed_seconds": 0.52,
+  "chunks_per_second": 227.0,
+  "store_path": "/Users/a-lobanov-1/Desktop/projects/architecture-rag-bot/vector_store"
+}
